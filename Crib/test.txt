@@ -1,0 +1,5 @@
+1- 8. Dancer("1M")+Dancer("1L") dance Figure("reflection reels of 3 on opposite sides").
+ 9-16.       Dancer("1M")+Dancer("1L") dance Figure("reflection reels of 3 on own sides").
+17-24.       Dancer("1M")+Dancer("1L") cross RH, cast to 2nd place & dance Figure("1/2 figure of 8 round 2s").
+25-32.       Dancer("1M")+Dancer("1L") lead down between the Dancer("3M")+Dancer("3L"),
+             cast up to 2nd place & Dancer("2M")+Dancer("2L")+Dancer("1M")+Dancer("1L")+Dancer("3M")+Dancer("3L") turn partners RH.
