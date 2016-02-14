@@ -32,6 +32,8 @@ place : ordinal Place;
 
 corner : ordinal corner;
 
+multiplier : IntegerLiteral? (IntegerLiteral Slash IntegerLiteral)?;
+
 // predicates definitions start here
 predicates : predicate (delimiter predicates)? ;
 
@@ -44,12 +46,12 @@ simplePred: Dance figure?
           | Turn Hand?
           ;
 
-figure : Figure OpenBracket StringLiteral CloseBracket;
+figure : multiplier Figure OpenBracket StringLiteral CloseBracket;
 
 addition: To place
         | To Face (dancers | corner)
         | upDown
-        | Between dancers
+        | (Between | Round) dancers
         ;
 
 upDown : Up | Down;
@@ -63,6 +65,8 @@ Plus : '+';
 And : A N D | '&';
 
 Between : B E T W E E N;
+
+Round : R O U N D;
 
 Dancer : D A N C E R;
 
@@ -115,6 +119,7 @@ OpenBracket : '(';
 CloseBracket : ')';
 OpenBrace : '{';
 CloseBrace : '}';
+Slash : '/';
 
 UnparsedWord : Letter+ -> skip;
 WS  : [ \t\r\n]+ -> skip ;
